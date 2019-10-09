@@ -1,0 +1,139 @@
+
+html {
+    margin: 0;
+    font-family: 'Righteous', cursive;
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+--oscuro:#AAD3C3;
+--claro: #D0E5DB;
+--masOscuro:#76757B;
+--rojo:#E04850;
+}
+
+
+    h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+  img {
+      width: 100%;
+  }
+  
+  .contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    
+    
+}
+
+  .header{
+      display: grid;
+      justify-content: center;
+      padding: 2rem 0;
+  }
+
+  .barra{
+      background-color: var(--oscuro);
+      padding: 2rem;
+  }
+
+  .nav{
+      display: grid;
+      justify-content: center;
+   
+  }
+  @media (min-width: 768px){
+      .nav{   
+         grid-template-columns: repeat(4,200px);
+         grid-column-gap: 2rem;
+      }
+  }
+
+  .nav a {
+      font-size: 3rem;
+      text-align: center;
+      text-decoration: none;
+      color: var(--masOscuro);
+  }
+  nav a:hover{
+      color: var(--rojo);
+      
+  }
+
+  @media (min-width: 768px){
+      .lista-productos{
+          display: grid;
+          grid-template-columns: repeat(3, 33.3%);
+          grid-gap: 2rem;
+          padding: 3rem;
+          
+        }
+    }
+
+
+.producto{
+    margin: 2rem 0;
+    background-color: var(--oscuro);
+    padding: 1rem;
+}
+
+
+.contenido-producto {
+   margin: 0 auto;
+}
+.contenido-producto p{
+    margin: 1rem 1rem;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenido-producto .titulo{
+    font-size: 3rem;
+}
+
+.contenido-producto .precio{
+    font-size: 2.8rem;
+    color: var(--rojo);
+}
+
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton button{
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: #1B2024;
+    border-style: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+.boton button:hover{
+    cursor: pointer;
+    background-color: #E04850;
+}
+
+.grafico{
+    min-height: 300px;
+}
+
+.grafico1{
+    background-image: url(../img/bodymodelo.jpg);
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
